@@ -9,7 +9,7 @@ User = get_user_model()
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'email', 'is_customer', 'is_admin']
+        fields = ['id', 'username', 'email']  # Add more fields if needed
 
 class PhoneSerializer(serializers.ModelSerializer):
     class Meta:

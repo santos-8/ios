@@ -27,3 +27,4 @@ class Order(models.Model):
         default="pending"
     )
     ordered_at = models.DateTimeField(auto_now_add=True)
+
